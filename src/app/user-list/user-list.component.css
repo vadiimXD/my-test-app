@@ -1,0 +1,22 @@
+.even {
+    background-color: green;
+}
+
+.odd {
+    background-color: red;
+}
+
+.btn-handler {
+    border: 2px solid black;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+.btn-handler:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,5 +1,9 @@
 <ul>
     <li *ngFor="let user of users;index as i">
-        IFT: {{i}} / Name: {{user.name}} - Age: {{user.age}}
+        <span class="even" *ngIf="i % 2==0;"> IFT: {{i}} / Name: {{user.name}} - Age: {{user.age}}</span>
+        <span class="odd" *ngIf="i % 2==1"> IFT: {{i}} / Name: {{user.name}} - Age: {{user.age}}</span>
     </li>
 </ul>
+
+<div *ngIf="isToggle">Toggle Me</div>
+<button class="btn-handler" (click)="handleClick($event)">Click Me</button>
