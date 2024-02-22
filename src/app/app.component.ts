@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-test-app';
+  colorValue: string = "blue"
+
+  onOutPutFromChild(input: string) {
+    console.log(input)
+  }
 }

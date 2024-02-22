@@ -1,0 +1,19 @@
+<p>playground works!</p>
+
+
+<div [class]="testClass" *ngIf="isToggle">Toggle Me</div>
+<!-- <div class="{{testClass}}" *ngIf="isToggle">Toggle Me</div> -->
+<button class="btn-handler" (click)="handleClick($event)">Click Me</button>
+<p [class.shiny]="isToggle">This text is shiny on click</p>
+<img *ngIf="isToggle" [attr.src]="imgUrl" />
+<!-- <img *ngIf="isToggle" src="{{imgUrl}}" />  endnakvi ssa i dvete neshta-->
+
+<div [style.background-color]="isToggle ?'purple': 'black'">Dynamic color</div>
+
+<input type="text" #username>
+<button class="btn-handler" (click)="handleInput(username)">Handle input</button> <!-- vzimane na value ot input-->
+
+<!-- <div [ngClass]="['purple', 'black' ]">test ng</div>
+<div [class]="['purple', 'black' ]">class ng</div> -->
+
+<div [attr.data-test123]="'test123'">Dd</div> <!--  data test  atttribute -->

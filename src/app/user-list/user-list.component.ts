@@ -12,7 +12,7 @@ interface User {
 })
 
 export class UserListComponent {
-  isToggle = false
+  
 
   users: User[] = [
     { name: "Pesho", age: 18 },
@@ -21,7 +21,5 @@ export class UserListComponent {
     { name: "Sasho", age: 21 }
   ]
 
-  handleClick(ev: Event) {
-    this.isToggle = !this.isToggle
-  }
+
 }
